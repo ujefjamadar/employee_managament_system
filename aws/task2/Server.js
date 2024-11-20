@@ -8,7 +8,7 @@ const cors = require('cors');
 const path = require('path');
 const port = process.env.APP_PORT
 const host = process.env.HOST
-const buildpath = path.join(__dirname,'/dist')
+const buildpath = path.join(__dirname, '/dist/task/browser')
 app.use(express.json());
 app.use(cors())
 
