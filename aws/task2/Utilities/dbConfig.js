@@ -9,8 +9,6 @@ const { createPool, createConnection } = require('mysql')
 //     connectionLimit:10
 // });
 
-
-
 const connection = createConnection({
     port: process.env.DB_PORT,
     host: process.env.DB_HOST,
