@@ -7,10 +7,12 @@ const pool = require('./Utilities/dbConfig');
 const cors = require('cors');
 const port = process.env.APP_PORT
 const host = process.env.HOST
-app.use(express.json()); 
+const buildpath = path.join(__dirname, '/dist')
+app.use(express.json());
 app.use(cors())
 
-app.use('/',globalRoutes);
+app.use(express.static(buildpath))
+app.use('/', globalRoutes);
 
 
 
